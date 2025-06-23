@@ -2,6 +2,7 @@ streamlit
 PyMuPDF
 google-generativeai
 langchain
+langchain-community
 faiss-cpu
 python-dotenv
 sentence-transformers
