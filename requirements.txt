@@ -2,6 +2,7 @@ streamlit
 PyMuPDF
 google-generativeai
 langchain
+pypdf
 langchain-community
 faiss-cpu
 python-dotenv
