@@ -3,6 +3,8 @@ PyMuPDF
 google-generativeai
 langchain
 pypdf
+PyPDF2
+openai
 langchain-community
 faiss-cpu
 python-dotenv
