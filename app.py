@@ -3,8 +3,8 @@ import streamlit as st
 from dotenv import load_dotenv
 from vector_store import create_vector_store
 from qa_chain import ask_question
-import evaluate  
-qa_f1 = evaluate.load("f1") 
+from sklearn.metrics import f1_score
+
 
 
 
