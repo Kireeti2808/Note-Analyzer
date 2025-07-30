@@ -3,6 +3,11 @@ import streamlit as st
 from dotenv import load_dotenv
 from vector_store import create_vector_store
 from qa_chain import ask_question
+import evaluate  
+qa_f1 = evaluate.load("f1") 
+
+
+
 
 load_dotenv()
 st.title("📄 PDF Q&A Bot")
@@ -19,3 +24,4 @@ if uploaded_file and query:
         retriever = create_vector_store(uploaded_file)
         answer = ask_question(retriever, query)
         st.success(answer)
+
