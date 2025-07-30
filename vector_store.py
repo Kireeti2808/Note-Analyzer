@@ -19,3 +19,4 @@ def create_vector_store(uploaded_file):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     vectordb = FAISS.from_documents(chunks, embeddings)
     return vectordb.as_retriever()
+ 
